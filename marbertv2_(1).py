@@ -274,7 +274,7 @@ def preprocess_training_examples(examples):
         sample_idx = sample_map[i]
         ans = answers[sample_idx]
 
-        # ⚠️ CASE 1 — SQuAD format (list of dicts)
+        #  CASE 1 — SQuAD format (list of dicts)
         if isinstance(ans, list):
             if len(ans) == 0:
                 # No answer → label is (0, 0)
@@ -286,7 +286,7 @@ def preprocess_training_examples(examples):
             text = ans["text"]
             start_char = ans["answer_start"]
 
-        # ⚠️ CASE 2 — ARCD / AQAD / TydiQA format (dict of lists)
+        #  CASE 2 — ARCD / AQAD / TydiQA format (dict of lists)
         elif isinstance(ans, dict):
             if len(ans["text"]) == 0:
                 # No answer → label is (0, 0)
