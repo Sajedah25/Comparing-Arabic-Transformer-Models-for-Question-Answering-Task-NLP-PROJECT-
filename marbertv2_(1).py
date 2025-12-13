@@ -378,7 +378,7 @@ valid_dataset = tydiqa_valid_clean.map(
 )
 
 args = TrainingArguments(
-    output_dir="/content/drive/MyDrive/MARBERTv2_ON_Tydiqa_LAST_HF",
+    output_dir="YOUR DIRACTORY",
     per_device_train_batch_size=4,
     per_device_eval_batch_size=4,
     learning_rate=2e-5,
@@ -400,15 +400,10 @@ trainer = Trainer(
 
 trainer.train()
 
-trainer.save_model("/content/drive/MyDrive/MARBERTv2_ON_Tydiqa_LAST_HF")
-tokenizer.save_pretrained("/content/drive/MyDrive/MARBERTv2_ON_Tydiqa_LAST_HF")
+trainer.save_model("YOUR DIRACTORY")
+tokenizer.save_pretrained("YOUR DIRACTORY")
 
-model_path = "/content/drive/MyDrive/MARBERTv2_ON_Tydiqa_LAST_HF"
-tokenizer = AutoTokenizer.from_pretrained(model_path)
-model = AutoModelForQuestionAnswering.from_pretrained(model_path)
-model.eval()
-
-model_path = "/content/drive/MyDrive/MARBERTv2_ON_Tydiqa_LAST_HF"
+model_path = "YOUR DIRACTORY"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForQuestionAnswering.from_pretrained(model_path)
 model.eval()
@@ -499,7 +494,7 @@ arcd_test_dataset = arcd_valid_clean.map(
 )
 
 args = TrainingArguments(
-    output_dir="/content/drive/MyDrive/MARBERTv2_ON_ARCD_HF",
+    output_dir="YOUR DIRACTORY",
     learning_rate=2e-5,
     per_device_train_batch_size=4,
     per_device_eval_batch_size=4,
@@ -521,10 +516,10 @@ trainer = Trainer(
 
 trainer.train()
 
-trainer.save_model("/content/drive/MyDrive/MARBERTv2_ON_ARCD_HF")
-tokenizer.save_pretrained("/content/drive/MyDrive/MARBERTv2_ON_ARCD_HF")
+trainer.save_model("YOUR DIRACTORY")
+tokenizer.save_pretrained("YOUR DIRACTORY")
 
-model_path = "/content/drive/MyDrive/MARBERTv2_ON_ARCD_HF"
+model_path = "YOUR DIRACTORY"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForQuestionAnswering.from_pretrained(model_path)
 model.eval()
@@ -635,7 +630,7 @@ aqad_test_dataset = aqad_test_final.map(
 )
 
 args = TrainingArguments(
-    output_dir="/content/drive/MyDrive/MARBERTv2_ON_AQAD_HF",
+    output_dir="YOUR DIRACTORY",
     learning_rate=2e-5,
     per_device_train_batch_size=4,
     per_device_eval_batch_size=4,
@@ -657,8 +652,8 @@ trainer = Trainer(
 
 trainer.train()
 
-trainer.save_model("/content/drive/MyDrive/MARBERTv2_ON_AQAD_HF")
-tokenizer.save_pretrained("/content/drive/MyDrive/MARBERTv2_ON_AQAD_HF")
+trainer.save_model("YOUR DIRACTORY")
+tokenizer.save_pretrained("YOUR DIRACTORY")
 
 model_path = "/content/drive/MyDrive/MARBERTv2_ON_AQAD_HF"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
@@ -781,7 +776,7 @@ squad_test_dataset = flat_test.map(
 )
 
 args = TrainingArguments(
-    output_dir="/content/drive/MyDrive/MARBERTv2_ON_ARABIC_SQUAD_HF",
+    output_dir="YOUR DIRACTORY",
     learning_rate=2e-5,
     per_device_train_batch_size=4,
     per_device_eval_batch_size=4,
@@ -803,10 +798,10 @@ trainer = Trainer(
 
 trainer.train()
 
-trainer.save_model("/content/drive/MyDrive/MARBERTv2_ON_ARABIC_SQUAD_HF")
-tokenizer.save_pretrained("/content/drive/MyDrive/MARBERTv2_ON_ARABIC_SQUAD_HF")
+trainer.save_model("YOUR DIRACTORY")
+tokenizer.save_pretrained("YOUR DIRACTORY")
 
-model_path = "/content/drive/MyDrive/MARBERTv2_ON_ARABIC_SQUAD_HF"
+model_path = "YOUR DIRACTORY"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForQuestionAnswering.from_pretrained(model_path)
 model.eval()
