@@ -26,4 +26,12 @@ The project follows the standard extractive QA setup (SQuAD-style), where the mo
 - Reported results are presented on the **test set** (depending on the training configuration).
 
 ---
+### Acknowledgment 
 
+This project uses:
+
+HuggingFace Transformers and Datasets libraries
+
+Pretrained model checkpoints from HuggingFace Hub
+
+Public Arabic QA datasets (see paper/report references)
