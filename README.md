@@ -34,4 +34,4 @@ HuggingFace Transformers and Datasets libraries
 
 Pretrained model checkpoints from HuggingFace Hub
 
-Public Arabic QA datasets (see paper/report references)
+Public Arabic QA datasets (see paper)
