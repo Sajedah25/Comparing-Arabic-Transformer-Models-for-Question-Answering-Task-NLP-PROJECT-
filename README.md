@@ -1,6 +1,5 @@
 # Comparing-Arabic-Transformer-Models-for-Question-Answering-Task-NLP-PROJECT-
 
-# Arabic Extractive Question Answering (QA) — MARBERTv2 & CAMeLBERT
 
 This repository contains the full pipeline used to fine-tune and evaluate **two Arabic transformer models** for **extractive question answering**:
 
